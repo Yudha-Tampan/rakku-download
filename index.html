@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rakku — Nonton Anime & Baca Manga</title>
+<meta name="description" content="Download aplikasi Rakku untuk menonton anime, membaca manga, chatting, dan menikmati berbagai fitur komunitas.">
+<meta name="keywords" content="Rakku, download Rakku, nonton anime, baca manga, aplikasi anime, aplikasi manga, Rakku Coin, Rakku Shop">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rakku — Nonton Anime & Baca Manga">
+<meta property="og:description" content="Download aplikasi Rakku untuk menonton anime, membaca manga, chatting, dan menikmati berbagai fitur komunitas.">
+<meta property="og:image" content="assets/rakku.png">
+<link rel="icon" type="image/png" href="assets/rakku.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;800&family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="loader" id="loader" aria-hidden="true"><div class="loader-mark"><img src="assets/rakku.png" alt=""><i></i></div><div class="loader-name">RAKKU</div><div class="loader-bar"><b></b></div></div>
+<div id="scrollProgress"></div>
+
+<div class="bg-wrap" aria-hidden="true">
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+  <div class="bg-grid"></div>
+</div>
+
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="#top" class="brand">
+      <img src="assets/rakku.png" alt="Rakku" class="brand-mark" width="40" height="40">
+      <span class="brand-name">Rakku</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <div class="nav-links-head">
+        <a href="#top" class="brand">
+          <img src="assets/rakku.png" alt="Rakku" class="brand-mark" width="40" height="40">
+          <span class="brand-name">Rakku</span>
+        </a>
+        <button class="nav-close" id="navClose" aria-label="Tutup menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <a href="#top" class="nav-link"><span>Home</span></a>
+      <a href="#tentang" class="nav-link"><span>Tentang</span></a>
+      <a href="#fitur" class="nav-link"><span>Fitur</span></a>
+      <a href="#tutorial" class="nav-link nav-link-new"><span>Tutorial</span><em class="nav-badge">Baru</em></a>
+      <a href="#tampilan" class="nav-link"><span>Tampilan</span></a>
+      <a href="#keamanan" class="nav-link"><span>Keamanan</span></a>
+      <a href="#faq" class="nav-link"><span>FAQ</span></a>
+      <a href="#kontak" class="nav-link"><span>Kontak</span></a>
+      <a href="#download" class="nav-link"><span>Download</span></a>
+      <a href="#download" class="btn btn-primary nav-cta">Download Rakku</a>
+    </nav>
+
+    <a href="#download" class="btn btn-primary btn-nav">Download</a>
+
+    <button class="hamburger" id="hamburger" aria-label="Buka menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-backdrop" id="navBackdrop"></div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-content">
+    <p class="eyebrow reveal"><i class="dot"></i>Aplikasi Resmi Rakku <b id="heroVer">v1.2</b></p>
+    <h1 class="hero-title reveal">Nonton Anime &amp; Baca Manga<br><span class="text-gradient">Dalam Satu Aplikasi</span></h1>
+    <p class="hero-desc reveal" id="heroDesc">Memuat deskripsi Rakku...</p>
+    <div class="hero-actions reveal">
+      <a href="#download" class="btn btn-primary btn-lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg><span>Download Rakku</span></a>
+      <a href="#fitur" class="btn btn-ghost btn-lg">Lihat Fitur</a>
+    </div>
+    <div class="hero-chips reveal">
+      <span class="chip"><i class="fa-solid fa-clapperboard"></i>Anime</span><span class="chip"><i class="fa-solid fa-book-open"></i>Manga</span>
+      <span class="chip"><i class="fa-solid fa-comments"></i>Global Chat</span><span class="chip"><i class="fa-solid fa-coins"></i>Rakku Coin</span>
+    </div>
+  </div>
+  <div class="hero-visual reveal" aria-hidden="true">
+    <div class="hv-glow" data-depth="10"></div><div class="hv-ring" data-depth="14"></div>
+    <img class="hv-char" data-depth="22" src="assets/img/rakku-char.webp" alt="" width="832" height="704" fetchpriority="high">
+    <div class="phone hv-phone" data-depth="38"><img src="assets/img/app-home.webp" alt="" width="720" height="1496" fetchpriority="high"></div>
+    <div class="hv-tag t1" data-depth="52"><i class="fa-solid fa-star"></i>Anime terbaru</div>
+    <div class="hv-tag t2" data-depth="60"><i class="fa-solid fa-coins"></i>Rakku Coin</div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"><div class="scroll-cue-dot"></div></div>
+</section>
+
+<section class="section" id="tentang">
+  <div class="section-inner">
+    <p class="eyebrow center reveal">Tentang Rakku</p>
+    <h2 class="section-title center reveal">Satu aplikasi, semesta anime &amp; manga</h2>
+    <p class="section-desc center reveal" id="aboutDesc">Memuat...</p>
+    <div class="stats-grid" id="statsGrid"></div>
+  </div>
+</section>
+
+<section class="section alt" id="fitur">
+  <div class="section-inner">
+    <p class="eyebrow center reveal"><i class="dot"></i>Fitur Rakku</p>
+    <h2 class="section-title center reveal">Semua yang kamu butuhkan,<br>satu genggaman</h2>
+    <p class="section-desc center reveal">Dari menonton hingga mengobrol, Rakku dirancang untuk menemani setiap momen anime dan manga-mu.</p>
+    <div class="showcase reveal" id="showcase">
+      <div class="sc-list" id="scList" role="tablist" aria-label="Daftar fitur"></div>
+      <div class="sc-stage" id="scStage"><div class="sc-glow"></div><div class="sc-ring"></div><div class="sc-num" id="scNum">01</div><div class="sc-media" id="scMedia"></div><div class="sc-tags" id="scTags"></div></div>
+      <div class="sc-info" id="scInfo"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="tutorial">
+  <div class="section-inner split">
+    <div class="split-aside"><p class="eyebrow reveal">Tutorial</p>
+    <h2 class="section-title reveal">Cara Matikan Play Protect</h2>
+    <p class="section-desc reveal">Google Play Protect sering memberi peringatan pada APK dari luar Play Store — termasuk Rakku yang 100% aman. Ikuti langkah berikut untuk mematikannya lewat Play Store.</p>
+
+    <div class="tutorial-alert reveal">
+      <div class="tutorial-alert-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+      </div>
+      <div>
+        <strong>Rakku 100% aman.</strong> Play Protect menandai aplikasi di luar Play Store secara otomatis — bukan berarti berbahaya. APK Rakku bebas virus, malware, dan tidak meminta izin aneh-aneh.
+      </div>
+    </div></div>
+
+    <div class="steps-list split-main">
+      <div class="step-card reveal">
+        <div class="step-number step-blue">1</div>
+        <div class="step-body">
+          <h3 class="step-title">Buka Google Play Store</h3>
+          <p class="step-desc">Buka aplikasi <strong>Google Play Store</strong> di HP Android kamu. Pastikan kamu sudah login dengan akun Google.</p>
+        </div>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-number step-blue">2</div>
+        <div class="step-body">
+          <h3 class="step-title">Ketuk foto profil kamu</h3>
+          <p class="step-desc">Di pojok kanan atas halaman Play Store, ketuk <strong>ikon foto profil</strong> atau inisial nama akun Google kamu.</p>
+        </div>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-number step-blue">3</div>
+        <div class="step-body">
+          <h3 class="step-title">Pilih "Play Protect"</h3>
+          <p class="step-desc">Dari menu yang muncul, pilih opsi <strong>"Play Protect"</strong>. Kamu akan masuk ke halaman pengaturan keamanan Play Protect.</p>
+        </div>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-number step-blue">4</div>
+        <div class="step-body">
+          <h3 class="step-title">Buka Pengaturan Play Protect</h3>
+          <p class="step-desc">Di halaman Play Protect, ketuk ikon <strong>roda gigi (⚙️)</strong> di pojok kanan atas untuk membuka pengaturan.</p>
+        </div>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-number step-blue">5</div>
+        <div class="step-body">
+          <h3 class="step-title">Matikan "Pindai aplikasi dengan Play Protect"</h3>
+          <p class="step-desc">Nonaktifkan toggle <strong>"Pindai aplikasi dengan Play Protect"</strong>. Sebuah dialog konfirmasi akan muncul — ketuk <strong>"Nonaktifkan"</strong> untuk mengonfirmasi.</p>
+          <div class="step-tip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4m0-4h.01"/></svg>
+            <span>Jika muncul pertanyaan kenapa, pilih alasan apa saja lalu konfirmasi.</span>
+          </div>
+        </div>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-number step-blue">6</div>
+        <div class="step-body">
+          <h3 class="step-title">Install Rakku &amp; aktifkan kembali</h3>
+          <p class="step-desc">Sekarang install Rakku seperti biasa. Setelah berhasil terinstall, kamu bisa <strong>mengaktifkan kembali Play Protect</strong> lewat langkah yang sama untuk menjaga keamanan HP kamu secara keseluruhan.</p>
+          <div class="step-tip step-tip-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>Direkomendasikan mengaktifkan kembali Play Protect setelah instalasi selesai.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="tampilan">
+  <div class="section-inner">
+    <p class="eyebrow center reveal">Screenshot</p>
+    <h2 class="section-title center reveal">Tampilan Aplikasi Rakku</h2>
+    <p class="section-desc center reveal">Intip langsung tampilan asli aplikasi Rakku sebelum kamu download.</p>
+  </div>
+  <div class="carousel" id="screenshotCarousel">
+    <button class="carousel-arrow carousel-arrow-left" id="carouselPrev" aria-label="Sebelumnya">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+    </button>
+    <div class="carousel-track-wrap" id="carouselTrackWrap">
+      <div class="carousel-track" id="carouselTrack"></div>
+    </div>
+    <button class="carousel-arrow carousel-arrow-right" id="carouselNext" aria-label="Berikutnya">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+    </button>
+  </div>
+  <div class="carousel-dots" id="carouselDots"></div>
+</section>
+
+<section class="section" id="keamanan">
+  <div class="section-inner">
+    <p class="eyebrow center reveal">Keamanan</p>
+    <h2 class="section-title center reveal">Kenapa Rakku Aman Digunakan?</h2>
+    <p class="section-desc center reveal">Kami tahu banyak yang ragu install APK dari luar Play Store. Wajar — dan berikut alasan kenapa Rakku aman untuk kamu pasang.</p>
+    <div class="security-grid">
+      <figure class="security-hero reveal"><img src="assets/img/rakku-char.webp" alt="Karakter Rakku Security" loading="lazy" width="832" height="704"><figcaption><strong>Rakku Security</strong><span>Dijaga ketat, dirilis dari source code resmi.</span></figcaption></figure>
+      <div class="security-card reveal">
+        <div class="security-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3 class="security-title">Bebas Virus &amp; Malware</h3>
+        <p class="security-desc">File APK Rakku tidak disisipi virus, trojan, atau malware apa pun. Setiap rilis dibuat dari source code kami sendiri, bukan hasil "repack" aplikasi orang lain yang rawan disusupi kode berbahaya.</p>
+      </div>
+      <div class="security-card reveal">
+        <div class="security-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+        <h3 class="security-title">Tidak Ada Izin Aneh-Aneh</h3>
+        <p class="security-desc">Rakku hanya meminta izin yang benar-benar dibutuhkan aplikasi. Kami tidak meminta akses ke kontak, SMS, kamera diam-diam, atau data pribadi yang tidak relevan.</p>
+      </div>
+      <div class="security-card reveal">
+        <div class="security-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 14.14 14.14"/></svg></div>
+        <h3 class="security-title">Tidak Ada Iklan Paksa</h3>
+        <p class="security-desc">Kami tidak menyisipkan adware atau popup iklan yang mengganggu. Rakku Coin &amp; Rakku Shop bersifat opsional, bukan paksaan atau jebakan transaksi tersembunyi.</p>
+      </div>
+      <div class="security-card reveal">
+        <div class="security-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 6v6c0 5.25 3.75 9.75 9 11 5.25-1.25 9-5.75 9-11V6l-9-4Z"/></svg></div>
+        <h3 class="security-title">Link Download Resmi</h3>
+        <p class="security-desc">Semua link unduhan hanya berasal dari sumber resmi Rakku. Hindari mengunduh dari situs pihak ketiga yang mengklaim menyediakan APK Rakku di luar website ini.</p>
+      </div>
+      <div class="security-card reveal">
+        <div class="security-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3 class="security-title">Update Transparan</h3>
+        <p class="security-desc">Setiap pembaruan versi selalu disertai changelog yang jelas di section Update — jadi kamu selalu tahu persis apa yang berubah sebelum memutuskan untuk update.</p>
+      </div>
+      <div class="security-card reveal">
+        <div class="security-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3 class="security-title">Komunitas Aktif</h3>
+        <p class="security-desc">Ribuan pengguna aktif memakai Rakku setiap hari dan bisa saling melapor lewat fitur Saran &amp; Laporan di aplikasi bila menemukan sesuatu yang mencurigakan.</p>
+      </div>
+    </div>
+    <p class="security-note reveal">Tips tambahan: karena Rakku diinstal dari luar Play Store, Android akan menampilkan peringatan standar "sumber tidak dikenal" — ini normal untuk semua APK di luar Play Store, bukan tanda aplikasi berbahaya. Pastikan kamu selalu mengunduh dari halaman resmi ini.</p>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="section-inner">
+    <p class="eyebrow center reveal">FAQ</p>
+    <h2 class="section-title center reveal">Pertanyaan yang Sering Ditanyakan</h2>
+    <p class="section-desc center reveal">Masih ragu atau bingung sebelum download? Mungkin jawabannya ada di sini.</p>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
+
+<section class="section alt" id="download">
+  <div class="section-inner">
+    <div class="dl-hero reveal"><div><p class="eyebrow"><i class="dot"></i>Download</p><h2 class="section-title">Siap masuk ke <span class="text-gradient">Rakku?</span></h2><p class="section-desc">Pilih versi terbaru untuk pengalaman dan fitur paling maksimal.</p></div><img src="assets/img/rakku-char.webp" alt="" loading="lazy" width="832" height="704"></div>
+    
+    <div class="server-status reveal" id="serverStatus">
+      <span class="server-status-dot"></span>
+      <span class="server-status-text">Memeriksa status server...</span>
+    </div>
+    <div class="downloads-list" id="downloadsList"></div>
+    <div class="share-block reveal">
+      <p class="share-label">Bagikan Rakku ke teman kamu</p>
+      <div class="share-buttons" id="shareButtons"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="update">
+  <div class="section-inner">
+    <p class="eyebrow center reveal">Changelog</p>
+    <h2 class="section-title center reveal">Update Rakku</h2>
+    <p class="section-desc center reveal">Pantau perkembangan Rakku dari waktu ke waktu.</p>
+    <div class="updates-list" id="updatesList"></div>
+  </div>
+</section>
+
+<section class="section alt" id="kontak">
+  <div class="section-inner">
+    <p class="eyebrow center reveal">Hubungi Kami</p>
+    <h2 class="section-title center reveal">Kontak Rakku</h2>
+    <p class="section-desc center reveal">Gabung komunitas atau hubungi tim Rakku lewat channel di bawah ini.</p>
+  </div>
+  <div class="contact-carousel" id="contactCarousel">
+    <button class="carousel-arrow" id="contactPrev" aria-label="Sebelumnya">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+    </button>
+    <div class="contact-track-wrap" id="contactTrackWrap">
+      <div class="contact-track" id="contactTrack">
+        <a href="https://chat.whatsapp.com/HfvJMI5PlazEFjyWgaIyFR" target="_blank" rel="noopener noreferrer" class="contact-card contact-card-whatsapp">
+          <div class="contact-card-icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <h3 class="contact-card-title">Grup WhatsApp</h3>
+          <p class="contact-card-desc">Gabung grup WhatsApp Rakku untuk diskusi, update, dan bantuan langsung dari komunitas.</p>
+          <span class="contact-card-cta">Gabung Grup <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+        <a href="https://discord.gg/6f67DFfSm" target="_blank" rel="noopener noreferrer" class="contact-card contact-card-discord">
+          <div class="contact-card-icon"><i class="fa-brands fa-discord"></i></div>
+          <h3 class="contact-card-title">Discord</h3>
+          <p class="contact-card-desc">Nongkrong bareng komunitas Rakku di Discord, ikut event, dan dapat info paling cepat.</p>
+          <span class="contact-card-cta">Join Discord <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+        <a href="mailto:adminrakku@gmail.com" class="contact-card contact-card-gmail">
+          <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+          <h3 class="contact-card-title">Email</h3>
+          <p class="contact-card-desc">Butuh bantuan resmi atau kerja sama? Kirim email langsung ke tim Rakku.</p>
+          <span class="contact-card-cta">adminrakku@gmail.com <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+      </div>
+    </div>
+    <button class="carousel-arrow" id="contactNext" aria-label="Berikutnya">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+    </button>
+  </div>
+  <div class="carousel-dots" id="contactDots"></div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="brand">
+        <img src="assets/rakku.png" alt="Rakku" class="brand-mark" width="40" height="40">
+        <span class="brand-name">Rakku</span>
+      </div>
+      <p class="footer-tagline">Tempat nonton anime dan baca manga dalam satu aplikasi.</p>
+      <div class="footer-social">
+        <a href="https://chat.whatsapp.com/HfvJMI5PlazEFjyWgaIyFR" class="footer-social-btn" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.3-.8.8-.8 1.9s.8 2.2 1 2.4c.1.1 1.6 2.5 4 3.5.5.2 1 .4 1.3.5.6.2 1.1.2 1.5.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.2L2 22l4.9-1.3C8.4 21.6 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2Zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3C3.9 15 3.3 13.5 3.3 12c0-4.8 3.9-8.7 8.7-8.7s8.7 3.9 8.7 8.7-3.9 8.7-8.7 8.7Z"/></svg>
+        </a>
+        <a href="https://discord.gg/6f67DFfSm" class="footer-social-btn" aria-label="Discord">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.4A19.1 19.1 0 0 0 15.6 3c-.2.4-.5.9-.6 1.3a17.7 17.7 0 0 0-5.3 0A12.8 12.8 0 0 0 9.1 3a19.2 19.2 0 0 0-4.7 1.4C1.1 9.2.3 13.9 .7 18.5a19.3 19.3 0 0 0 5.9 3c.5-.6.9-1.3 1.3-2a12.5 12.5 0 0 1-2-.9l.5-.4a13.7 13.7 0 0 0 11.7 0l.5.4c-.6.4-1.3.7-2 .9.4.7.8 1.4 1.3 2a19.2 19.2 0 0 0 5.9-3c.4-5.2-.7-9.8-3-13.1ZM8.5 15.6c-1.1 0-2.1-1-2.1-2.3 0-1.3.9-2.3 2.1-2.3 1.2 0 2.1 1 2.1 2.3 0 1.3-.9 2.3-2.1 2.3Zm7 0c-1.1 0-2.1-1-2.1-2.3 0-1.3.9-2.3 2.1-2.3 1.2 0 2.1 1 2.1 2.3 0 1.3-.9 2.3-2.1 2.3Z"/></svg>
+        </a>
+        <a href="mailto:adminrakku@gmail.com" class="footer-social-btn" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Navigasi</h4>
+        <a href="#tampilan">Tampilan</a>
+        <a href="#keamanan">Keamanan</a>
+        <a href="#faq">FAQ</a>
+        <a href="#tutorial">Tutorial</a>
+        <a href="#download">Download</a>
+        <a href="#fitur">Fitur</a>
+        <a href="#update">Update</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+      <div class="footer-col">
+        <h4>Kontak</h4>
+        <a href="mailto:adminrakku@gmail.com">adminrakku@gmail.com</a>
+        <a href="https://chat.whatsapp.com/HfvJMI5PlazEFjyWgaIyFR" target="_blank" rel="noopener">Grup WhatsApp</a>
+        <a href="https://discord.gg/6f67DFfSm" target="_blank" rel="noopener">Discord</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Rakku. All Rights Reserved.</p>
+    <p>Aplikasi untuk nonton anime dan baca manga.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 15 12 9l-6 6"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>

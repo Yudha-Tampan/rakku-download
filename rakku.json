@@ -1,0 +1,279 @@
+{
+  "app": {
+    "name": "Rakku",
+    "tagline": "Nonton Anime & Baca Manga Dalam Satu Aplikasi",
+    "description": "Rakku adalah aplikasi hiburan yang memungkinkan kamu menonton anime, membaca manga, mengobrol dengan komunitas global, mengumpulkan Rakku Coin, berbelanja di Rakku Shop, dan mempercantik profil dengan border eksklusif — semuanya dalam satu aplikasi.",
+    "logo": "assets/rakku.png"
+  },
+  "stats": [
+    {
+      "label": "Anime",
+      "value": 1000,
+      "suffix": "+"
+    },
+    {
+      "label": "Manga",
+      "value": 1000,
+      "suffix": "+"
+    },
+    {
+      "label": "Pengguna",
+      "value": 300,
+      "suffix": "+"
+    },
+    {
+      "label": "Fitur",
+      "value": 9,
+      "suffix": ""
+    }
+  ],
+  "features": [
+    {
+      "icon": "clapperboard",
+      "title": "Anime",
+      "description": "Nonton berbagai anime dengan tampilan yang nyaman dan kualitas jernih.",
+      "image": "assets/img/app-anime.webp",
+      "shape": "phone",
+      "tags": [
+        "Terbaru",
+        "Berjalan",
+        "Tamat"
+      ],
+      "hue": 268
+    },
+    {
+      "icon": "book-open",
+      "title": "Manga",
+      "description": "Baca manga dengan reader yang nyaman, ringan, dan cepat.",
+      "image": "assets/img/app-manga.webp",
+      "shape": "phone",
+      "tags": [
+        "Manga",
+        "Manhwa",
+        "Manhua"
+      ],
+      "hue": 330
+    },
+    {
+      "icon": "message-circle",
+      "title": "Global Chat",
+      "description": "Ngobrol dengan pengguna Rakku dari seluruh dunia secara real-time.",
+      "image": "assets/img/app-home.webp",
+      "shape": "phone",
+      "tags": [
+        "Public Discussion",
+        "Real-time",
+        "Komunitas"
+      ],
+      "hue": 200
+    },
+    {
+      "icon": "coins",
+      "title": "Rakku Coin",
+      "description": "Kumpulkan dan gunakan Rakku Coin untuk berbagai fitur di dalam aplikasi.",
+      "image": "assets/img/app-akun.webp",
+      "shape": "phone",
+      "tags": [
+        "Top Up",
+        "RC harian",
+        "Leaderboard"
+      ],
+      "hue": 45
+    },
+    {
+      "icon": "shopping-bag",
+      "title": "Rakku Shop",
+      "description": "Tempat membeli item, border, dan fitur eksklusif di Rakku.",
+      "image": "assets/img/app-minigame.webp",
+      "shape": "phone",
+      "tags": [
+        "Gacha",
+        "Clan",
+        "Item"
+      ],
+      "hue": 315
+    },
+    {
+      "icon": "sparkles",
+      "title": "Border",
+      "description": "Gunakan berbagai border unik untuk mempercantik profilmu.",
+      "image": "assets/img/border.webp",
+      "shape": "wide",
+      "tags": [
+        "Laurel",
+        "Eksklusif",
+        "Inventaris"
+      ],
+      "hue": 285
+    },
+    {
+      "icon": "message-square-text",
+      "title": "Komentar",
+      "description": "Berikan komentar dan diskusi pada anime atau manga favoritmu.",
+      "image": "assets/img/app-komentar.webp",
+      "shape": "phone",
+      "tags": [
+        "Anime",
+        "Manga",
+        "Suka"
+      ],
+      "hue": 215
+    },
+    {
+      "icon": "user-circle",
+      "title": "Profile",
+      "description": "Kelola profil, identitas, dan pencapaianmu di Rakku.",
+      "image": "assets/img/app-profil.webp",
+      "shape": "phone",
+      "tags": [
+        "Level",
+        "Badge",
+        "Riwayat"
+      ],
+      "hue": 250
+    },
+    {
+      "icon": "shield-check",
+      "title": "Aman & Terpercaya",
+      "description": "APK Rakku bebas virus, tanpa izin aneh-aneh, dan dirilis dari source code resmi kami.",
+      "image": "assets/img/app-login.webp",
+      "shape": "phone",
+      "tags": [
+        "Bebas virus",
+        "Tanpa izin aneh",
+        "Resmi"
+      ],
+      "hue": 160
+    }
+  ],
+  "screenshots": [
+    {
+      "image": "assets/img/app-login.webp",
+      "caption": "Masuk"
+    },
+    {
+      "image": "assets/img/app-home.webp",
+      "caption": "Beranda"
+    },
+    {
+      "image": "assets/img/app-anime.webp",
+      "caption": "Anime"
+    },
+    {
+      "image": "assets/img/app-manga.webp",
+      "caption": "Manga"
+    },
+    {
+      "image": "assets/img/app-riwayat.webp",
+      "caption": "Riwayat"
+    },
+    {
+      "image": "assets/img/app-akun.webp",
+      "caption": "Akun & Koin"
+    },
+    {
+      "image": "assets/img/app-komentar.webp",
+      "caption": "Komentar"
+    },
+    {
+      "image": "assets/img/app-profil.webp",
+      "caption": "Profil"
+    },
+    {
+      "image": "assets/img/app-minigame.webp",
+      "caption": "Minigame"
+    },
+    {
+      "image": "assets/img/app-premium.webp",
+      "caption": "Premium"
+    }
+  ],
+  "server_status": {
+    "online": true,
+    "note": "Server Online — Semua Sistem Normal"
+  },
+  "downloads": [
+    {
+      "name": "Rakku",
+      "version": "1.1-perf",
+      "type": "APK",
+      "size": "4.1 MB",
+      "url": "https://www.mediafire.com/file/fa2ur4xktgh62v6/rakku.apk/file",
+      "date": "2026-08-15"
+    },
+    {
+      "name": "Rakku",
+      "version": "1.2-perf",
+      "type": "APK",
+      "size": "4.4 MB",
+      "url": "https://www.mediafire.com/file/fa2ur4xktgh62v6/rakku.apk/file",
+      "date": "2026-08-27"
+    },
+    {
+      "name": "Rakku",
+      "version": "1.0.0",
+      "type": "APK",
+      "size": "44.1 MB",
+      "url": "https://www.mediafire.com/file/e0o6tsb9myvme3s/rakku_1.0.0.apk/file",
+      "date": "2026-10-31",
+      "latest": true
+    }
+  ],
+  "faq": [
+    {
+      "question": "Apakah Rakku benar-benar gratis?",
+      "answer": "Ya, Rakku bisa diunduh dan digunakan sepenuhnya gratis. Rakku Coin dan Rakku Shop bersifat opsional untuk mempercantik profil, bukan syarat untuk memakai fitur utama seperti nonton anime dan baca manga."
+    },
+    {
+      "question": "Kenapa Android menampilkan peringatan saat install?",
+      "answer": "Karena Rakku diinstal dari luar Google Play Store, Android secara otomatis menampilkan peringatan \"sumber tidak dikenal\". Ini adalah perilaku standar untuk semua aplikasi APK di luar Play Store, bukan tanda bahwa aplikasinya berbahaya."
+    },
+    {
+      "question": "Apakah data pribadi saya aman?",
+      "answer": "Rakku hanya meminta izin yang benar-benar dibutuhkan aplikasi dan tidak membagikan data pribadimu ke pihak yang tidak berkepentingan. Gunakan email dan password yang berbeda dari akun pentingmu sebagai praktik keamanan yang baik."
+    },
+    {
+      "question": "Kenapa Google Play Protect memberi peringatan?",
+      "answer": "Play Protect memang menandai hampir semua aplikasi yang tidak terdaftar di Play Store, apa pun isinya. Selama kamu mengunduh dari halaman resmi ini, file APK yang kamu pasang aman digunakan. Lihat panduan lengkap cara mematikan Play Protect di section Tutorial."
+    },
+    {
+      "question": "Bagaimana jika lupa password akun Rakku?",
+      "answer": "Saat ini fitur reset password bisa dilakukan melalui halaman login di aplikasi. Jika mengalami kendala, kamu bisa menghubungi kami melalui Global Chat atau kontak yang tersedia di footer website ini."
+    },
+    {
+      "question": "Apakah Rakku tersedia untuk iOS?",
+      "answer": "Saat ini Rakku baru tersedia dalam bentuk APK untuk Android. Dukungan untuk platform lain akan diinformasikan melalui section Update jika sudah tersedia."
+    },
+    {
+      "question": "Kenapa saya tidak menerima email konfirmasi pendaftaran?",
+      "answer": "Coba periksa folder Spam atau Promosi di email kamu terlebih dahulu — email konfirmasi terkadang masuk ke sana. Lihat panduan lengkapnya di section \"Cara Daftar Akun di Rakku\" di atas."
+    },
+    {
+      "question": "Apakah aplikasi ini akan menguras baterai atau kuota berlebihan?",
+      "answer": "Rakku dirancang ringan dan tidak menjalankan proses tersembunyi di latar belakang. Penggunaan baterai dan kuota mengikuti aktivitas normal seperti streaming anime dan membaca manga."
+    }
+  ],
+  "updates": [
+    {
+      "version": "1.1-perf",
+      "date": "2026-08-15",
+      "title": "Maintenance Update",
+      "changes": [
+        "Perbaikan bug pada halaman manga"
+      ]
+    },
+    {
+      "version": "1.2-perf",
+      "date": "2026-08-15",
+      "title": "Update Fitur",
+      "changes": [
+        "Penambahan fitur Clan",
+        "Penambahan informasi baru pada profil seperti jumlah hari sejak akun dibuat, total komentar, dan total menit menonton",
+        "Pengguna kini dapat melihat profil pengguna lain",
+        "Penambahan fitur Next dan Previous pada manga dan anime",
+        "Penambahan fitur Global Chat",
+        "Pengguna hanya dapat mengirim pesan Global Chat setiap 5 detik"
+      ]
+    }
+  ]
+}
